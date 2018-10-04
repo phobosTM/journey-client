@@ -37,6 +37,9 @@ const routes: Routes = [{
     path: 'tables',
     loadChildren: './tables/tables.module#TablesModule',
   }, {
+      path: 'routeinfo',
+      loadChildren: './routeinfo/routeinfo.module#RouteInfoModule',
+  }, {
     path: 'miscellaneous',
     loadChildren: './miscellaneous/miscellaneous.module#MiscellaneousModule',
   }, {

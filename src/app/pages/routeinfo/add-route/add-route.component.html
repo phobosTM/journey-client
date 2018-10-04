@@ -1,0 +1,72 @@
+<div class="row">
+    <div class="col-lg-10">
+        <nb-card>
+            <nb-card-header>Add New Route</nb-card-header>
+            <nb-card-body>
+                <div class="input-group">
+                    <input type="text" placeholder="Route's Name" class="form-control"/>
+                </div>
+                <div class="row full-name-inputs">
+                <div class="col-sm-5 input-group">
+                    <input type="number" min="0" step="0.5" placeholder="Length (km)" class="form-control"/>
+                </div>
+                </div>
+                <div class="row full-name-inputs">
+                <div class="col-sm-5 input-group">
+                    <input type="number" min="0" step="0.5" placeholder="Duration (hour)" class="form-control"/>
+                </div>
+                </div>
+                <div class="input-group">
+                    <textarea rows="8" placeholder="Description" class="form-control"></textarea>
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Facebook account" class="form-control"/>
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Instagram account" class="form-control"/>
+                </div>
+            </nb-card-body>
+        </nb-card>
+
+        <nb-card>
+            <nb-card-header>Route's Level</nb-card-header>
+            <nb-card-body>
+                <div class="demo-radio col-sm-4">
+                    <label class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" name="customRadio">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Beginner</span>
+                    </label>
+                    <label class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" name="customRadio" checked>
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Amateur</span>
+                    </label>
+                    <label class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" name="customRadio">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Expert</span>
+                    </label>
+                </div>
+            </nb-card-body>
+        </nb-card>
+
+        <nb-card>
+            <nb-card-body class="demo-rating">
+                <span class="rating-header">Status</span>
+                <div>
+                    <ngb-rating [(rate)]="starRate" max=5>
+                        <ng-template let-fill="fill">
+              <span class="star fill" [class.filled]="fill === 100">
+                <i class="ion-android-star" *ngIf="fill === 100"></i>
+                <i class="ion-android-star-outline" *ngIf="fill !== 100"></i>
+              </span>
+                        </ng-template>
+                    </ngb-rating>
+                </div>
+            </nb-card-body>
+        </nb-card>
+
+        </div>
+
+</div>
