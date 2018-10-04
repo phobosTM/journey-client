@@ -146,6 +146,20 @@ export const MENU_ITEMS: NbMenuItem[] = [
       },
     ],
   },
+    {
+        title: 'Routes',
+        icon: 'nb-location',
+        children: [
+            {
+                title: 'Add',
+                link: '/pages/routeinfo/add-route',
+            },
+            {
+                title: 'Edit & Delete',
+                link: '/pages/routeinfo/edit-route',
+            },
+        ],
+    },
   {
     title: 'Miscellaneous',
     icon: 'nb-shuffle',
