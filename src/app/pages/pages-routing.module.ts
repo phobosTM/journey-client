@@ -33,17 +33,18 @@ const routes: Routes = [{
   }, {
     path: 'forms',
     loadChildren: './forms/forms.module#FormsModule',
-  }, {
-    path: 'tables',
-    loadChildren: './tables/tables.module#TablesModule',
-  }, {
+  },  {
     path: 'miscellaneous',
     loadChildren: './miscellaneous/miscellaneous.module#MiscellaneousModule',
+  }, {
+    path: 'user-control',
+    loadChildren: './user-control/user-control.module#UserControlModule',
   }, {
     path: '',
     redirectTo: 'dashboard',
     pathMatch: 'full',
-  }, {
+  },
+    {
     path: '**',
     component: NotFoundComponent,
   }],

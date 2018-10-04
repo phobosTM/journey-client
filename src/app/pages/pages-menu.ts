@@ -178,4 +178,18 @@ export const MENU_ITEMS: NbMenuItem[] = [
       },
     ],
   },
+  {
+    title: 'User-Control',
+    icon: 'nb-person',
+    children: [
+      {
+        title: 'Add User',
+        link: '/pages/user-control/add-user',
+      },
+      {
+        title: 'Edit User',
+        link: '/pages/user-control/edit-user',
+      },
+    ],
+  },
 ];
