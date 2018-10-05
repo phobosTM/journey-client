@@ -33,17 +33,10 @@ const routes: Routes = [{
   }, {
     path: 'forms',
     loadChildren: './forms/forms.module#FormsModule',
-<<<<<<< HEAD
-  },  {
-=======
   }, {
     path: 'tables',
     loadChildren: './tables/tables.module#TablesModule',
   }, {
-      path: 'routeinfo',
-      loadChildren: './routeinfo/routeinfo.module#RouteInfoModule',
-  }, {
->>>>>>> c7807e12f592d3f1f44bf7aae2b7c531446589dd
     path: 'miscellaneous',
     loadChildren: './miscellaneous/miscellaneous.module#MiscellaneousModule',
   }, {
