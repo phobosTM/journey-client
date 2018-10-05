@@ -192,4 +192,18 @@ export const MENU_ITEMS: NbMenuItem[] = [
       },
     ],
   },
+  {
+    title: 'Route Info',
+    icon: 'nb-person',
+    children: [
+      {
+        title: 'Add Route',
+        link: '/pages/routeinfo/add-route',
+      },
+      {
+        title: 'Edit Route',
+        link: '/pages/routeinfo/edit-route',
+      },
+    ],
+  },
 ];

@@ -40,6 +40,9 @@ const routes: Routes = [{
     path: 'user-control',
     loadChildren: './user-control/user-control.module#UserControlModule',
   }, {
+    path: 'routeinfo',
+    loadChildren: './routeinfo/routeinfo.module#RouteInfoModule',
+  }, {
     path: '',
     redirectTo: 'dashboard',
     pathMatch: 'full',
